@@ -1,16 +1,20 @@
 import requests
 import json
 
-son = open('data.json')
+son = open('data/data.json')
 data = json.load(son)
- 
-url = 'https://www.jagel.id/api/v3/partner/create_place.php'
+token = input('token : ')
+
+# Create Place
+url_create_place = 'https://www.jagel.id/api/v3/partner/create_place.php'
+
 print("\nMerchant : " + data['merchant']['name'])
 print('\n##### Opening Hours')
 print('Jika tutup input 0, jika buka input 1\nJika tutup, jam & menit input -1')
 print('Label tersedia : cafe, mie dan bakso, warung, minuman, mie, sarapan, jajanan, promo, penyetan, kue, 24jam, terlaris, jamu, oleh, toko, pakaian, buah, sayur, sembako, satenasgor\n')
-body = {
-  "token": 'd996af9efa5aefaa2eac4a374e6f03b4',
+
+bodyCP = {
+  "token": token,
   "component_view_uid": '6215d6e509e7f',
   "title": data['merchant']['name'],
   "content": data['merchant']['cuisine'],
@@ -67,16 +71,39 @@ body = {
 y = "y"
 
 if input('Lanjut input y : ') == y:
-  r = requests.post(url, data=body)
+  print('Create Place')
+  requestsCP = requests.post(url_create_place, data=bodyCP)
 
-  print(r.status_code)
+  print('Status : ', requestsCP.status_code)
+  responseCP = json.dumps(requestsCP.json(), indent=3)
+  print(responseCP)
   print()
-  # print(r.json())
-  # print(json.dumps(body, indent=2))
+
+  # Upload Image
+  load = json.loads(responseCP)
+  # title = json.loads(responseCP)['list']['title']
+
+  image = open('data/image.txt', 'r').read()
+
+  url_upload_image = 'https://www.jagel.id/api/v3/partner/upload_image.php'
+  bodyUI = {
+    "image": f"{image}",
+    "hl": "in",
+    "view_uid": f"{load['list']['view_uid']}",
+    "appuid": "5f3e3c3c77909",
+    "position": "0",
+    "title": f"{load['list']['title']}",
+    "token": token,
+    "image_type": "jpg"
+  }
+
+  requestsUI = requests.post(url_upload_image, data=bodyUI)
+
+  print('Status : ', requestsUI.status_code)
+  print(requestsUI.json())
+  
 else:
   pass
-
-
 
 # Hiraukan
 # Data Images

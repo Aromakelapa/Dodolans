@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 
 url = f'https://p.grabtaxi.com/api/passenger/v4/grabfood/merchants/{input("ID Merchant : ")}?latlng=-6.890702%2C109.676352'
 
@@ -15,11 +16,16 @@ head = {
 
 r = requests.get(url, headers=head)
 
-print(r.status_code)
-print()
-# print(r.json())
+print('Status :', r.status_code)
+print('Data Merchant sudah masuk kedalam Dodolans/Post/data/data.json')
+
+try:
+	os.mkdir('../Post/data')
+except:
+	pass
+
 data = json.dumps(r.json(), indent=3)
-with open('data.json', mode='w') as file:
+with open('../Post/data/data.json', 'w') as file:
 	file.write(data)
 	file.close
 # print(data['merchant']['name'])
