@@ -1,0 +1,580 @@
+{
+   "merchant": {
+      "ID": "6-C2CHDE3CAVL3NJ",
+      "name": "Gudeg Mb Rita - Poncol",
+      "cuisine": "Asli Indonesia",
+      "photoHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/merchants/6-C2CHDE3CAVL3NJ/hero/f5e208cbc74e467abac8414c0f0152a0_1604719322232379844.webp",
+      "timeZone": "Asia/Jakarta",
+      "ETA": 0,
+      "description": "",
+      "openingHours": {
+         "open": false,
+         "displayedHours": "Closed",
+         "sun": "07:00-22:00",
+         "mon": "07:00-22:00",
+         "tue": "07:00-22:00",
+         "wed": "07:00-22:00",
+         "thu": "07:00-22:00",
+         "fri": "07:00-22:00",
+         "sat": "07:00-22:00",
+         "tempClosed": true
+      },
+      "isIntegrated": true,
+      "phoneNumber": "628972650033",
+      "distanceInKm": 0.756,
+      "section": "IDSEC20201107032615015249",
+      "latlng": {
+         "latitude": -6.8880368,
+         "longitude": 109.68266,
+         "poiID": ""
+      },
+      "address": {
+         "name": "Gudeg Mb Rita - Poncol",
+         "acronym": "",
+         "combined_address": "Jl. Teratai Poncol Gang Asparagas Barat, No. 32 RT. 01 / RW. 13, Poncol, Pekalongan Timur, Pekalongan, Pekalongan, 51122",
+         "combined_city": "Semarang",
+         "house": "",
+         "street": "Jl. Teratai Poncol Gang Asparagas Barat, No. 32 RT. 01 / RW. 13, Poncol, Pekalongan Timur, Pekalongan",
+         "suburb": "Pekalongan",
+         "postcode": "51122",
+         "city": "Semarang",
+         "cityId": 40,
+         "state": "",
+         "country": "Indonesia",
+         "countryID": 6,
+         "conbined_address": "",
+         "nameWithHtmlFormat": ""
+      },
+      "menu": {
+         "categories": [
+            {
+               "ID": "IDCAT20201107032615046193",
+               "name": "Menu",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2020112812511414519",
+                     "name": "nasi putih",
+                     "available": true,
+                     "priceInMinorUnit": 400000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812511414519/photo/menueditor_item_e985142b283d498a85b3649ea4665c34_1606567802272304597.webp",
+                     "description": "nasi putih",
+                     "modifierGroups": null,
+                     "sortOrder": 10004,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 400000,
+                     "priceV2": {
+                        "amountInMinor": 400000,
+                        "amountDisplay": "4.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 400000,
+                        "amountDisplay": "4.000"
+                     },
+                     "metadata": "",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": null,
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "317a7eab-c732-432d-ae6b-b905f14d455c",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020112812511414519",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 400000,
+                     "discountedTakeawayPriceInMin": 400000,
+                     "merchantID": "6-C2CHDE3CAVL3NJ",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812511414519/photo/menueditor_item_e985142b283d498a85b3649ea4665c34_1606567802272304597.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812511414519/detail/menueditor_item_e985142b283d498a85b3649ea4665c34_1606567802272304597.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  },
+                  {
+                     "ID": "IDITE2020112812360862670",
+                     "name": "gudeg lawuhan komplit paket 1",
+                     "available": true,
+                     "priceInMinorUnit": 4200000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812360862670/photo/menueditor_item_5a975ff123ee4075a25cb9f0491eb29b_1606568315466485516.webp",
+                     "description": "gudeg + telor2 + tahu2 +ayam bagian Gending + sambel goreng tempe + krecek",
+                     "modifierGroups": null,
+                     "sortOrder": 10003,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 4200000,
+                     "priceV2": {
+                        "amountInMinor": 4200000,
+                        "amountDisplay": "42.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 4200000,
+                        "amountDisplay": "42.000"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "317a7eab-c732-432d-ae6b-b905f14d455c",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020112812360862670",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 4200000,
+                     "discountedTakeawayPriceInMin": 4200000,
+                     "merchantID": "6-C2CHDE3CAVL3NJ",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812360862670/photo/menueditor_item_5a975ff123ee4075a25cb9f0491eb29b_1606568315466485516.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812360862670/detail/menueditor_item_5a975ff123ee4075a25cb9f0491eb29b_1606568315466485516.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  },
+                  {
+                     "ID": "IDITE2020112812301186163",
+                     "name": "nasi gudeg komplit paket 3",
+                     "available": true,
+                     "priceInMinorUnit": 2050000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812301186163/photo/menueditor_item_04dae8d4acc24541a2ad6640ddc8e4b7_1606620079522833130.webp",
+                     "description": "nasi+gudeg+telor+ayam suwir+tahu+sambal goreng tempe + krecek",
+                     "modifierGroups": null,
+                     "sortOrder": 10002,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 2050000,
+                     "priceV2": {
+                        "amountInMinor": 2050000,
+                        "amountDisplay": "20.500"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 2050000,
+                        "amountDisplay": "20.500"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "317a7eab-c732-432d-ae6b-b905f14d455c",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020112812301186163",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 2050000,
+                     "discountedTakeawayPriceInMin": 2050000,
+                     "merchantID": "6-C2CHDE3CAVL3NJ",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812301186163/photo/menueditor_item_04dae8d4acc24541a2ad6640ddc8e4b7_1606620079522833130.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812301186163/detail/menueditor_item_04dae8d4acc24541a2ad6640ddc8e4b7_1606620079522833130.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  },
+                  {
+                     "ID": "IDITE2020112812273738987",
+                     "name": "nasi gudeg komplit paket 2",
+                     "available": true,
+                     "priceInMinorUnit": 1850000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812273738987/photo/menueditor_item_f3d4faa580764878936a631d6b94c9dc_1606566342752071484.webp",
+                     "description": "nasi+ gudeg+ ayam paha+tahu+sambal goreng tempe + krecek",
+                     "modifierGroups": null,
+                     "sortOrder": 10001,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 1850000,
+                     "priceV2": {
+                        "amountInMinor": 1850000,
+                        "amountDisplay": "18.500"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 1850000,
+                        "amountDisplay": "18.500"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "317a7eab-c732-432d-ae6b-b905f14d455c",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020112812273738987",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 1850000,
+                     "discountedTakeawayPriceInMin": 1850000,
+                     "merchantID": "6-C2CHDE3CAVL3NJ",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812273738987/photo/menueditor_item_f3d4faa580764878936a631d6b94c9dc_1606566342752071484.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812273738987/detail/menueditor_item_f3d4faa580764878936a631d6b94c9dc_1606566342752071484.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  },
+                  {
+                     "ID": "IDITE2020112812232956760",
+                     "name": "nasi gudeg komplit paket 1",
+                     "available": false,
+                     "priceInMinorUnit": 1600000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812232956760/photo/menueditor_item_01be316eb4d844d98149a6e080ac645a_1606566065677882599.webp",
+                     "description": "nasi+ gudeg+telor+tahu+sambal goreng tempe + krecek",
+                     "modifierGroups": null,
+                     "sortOrder": 10000,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 1600000,
+                     "priceV2": {
+                        "amountInMinor": 1600000,
+                        "amountDisplay": "16.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 1600000,
+                        "amountDisplay": "16.000"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "317a7eab-c732-432d-ae6b-b905f14d455c",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020112812232956760",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 1600000,
+                     "discountedTakeawayPriceInMin": 1600000,
+                     "merchantID": "6-C2CHDE3CAVL3NJ",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812232956760/photo/menueditor_item_01be316eb4d844d98149a6e080ac645a_1606566065677882599.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020112812232956760/detail/menueditor_item_01be316eb4d844d98149a6e080ac645a_1606566065677882599.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 1,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            }
+         ],
+         "menuMeta": {
+            "orderValueLimit": 200000000,
+            "disableItemComment": false,
+            "itemLimit": 0
+         },
+         "campaigns": [
+            {
+               "ID": "SSCSRGArea4PreSegme-C3CWPBTFA8KGLN-78374529",
+               "campaignLevel": "delivery_fee",
+               "campaignType": "delivery",
+               "startTime": "2022-02-20T15:00:00Z",
+               "endTime": "2030-12-28T14:26:00Z",
+               "label": "",
+               "name": "Diskon Rp7.000 untuk ongkos kirim",
+               "priority": "low",
+               "status": "ongoing",
+               "tcDetails": [
+                  "Berlaku di cabang-cabang tertentu",
+                  "Diskon maksimal Rp7.000",
+                  "Berlaku dari 2022-02-20 22:00 sampai 2030-12-28 21:26"
+               ],
+               "nameForMex": "Semarang SSC  Normal Delivery Fee",
+               "businessTag": 2,
+               "hidden": true
+            }
+         ],
+         "omegaOffers": [],
+         "departments": null,
+         "menuItemType": "",
+         "isCampaignRequestThrottled": false,
+         "stackableOfferOption": 2,
+         "stackableOffers": null
+      },
+      "currency": {
+         "code": "IDR",
+         "symbol": "Rp",
+         "exponent": 2
+      },
+      "rating": 4.6,
+      "voteCount": 37,
+      "deliverBy": "GRAB",
+      "radius": 11000,
+      "estimatedDeliveryFee": {
+         "currency": {
+            "code": "IDR",
+            "symbol": "RP",
+            "exponent": 2
+         },
+         "highlighted": false,
+         "price": 100000,
+         "priceDisplay": "Rp1.000",
+         "status": 0,
+         "multiplier": 1
+      },
+      "promo": null,
+      "allowTakeAway": false,
+      "isUserFavorite": false,
+      "specialMerchantType": "",
+      "schedulerOrderConfig": {
+         "enableScheduleOrder": true,
+         "scheduleTimeSlots": [
+            {
+               "timeSlots": [
+                  {
+                     "from": "2022-07-13T05:37:00Z",
+                     "to": "2022-07-13T14:30:00Z",
+                     "available": true,
+                     "reason": ""
+                  }
+               ]
+            },
+            {
+               "timeSlots": [
+                  {
+                     "from": "2022-07-14T02:00:00Z",
+                     "to": "2022-07-14T14:30:00Z",
+                     "available": true,
+                     "reason": ""
+                  }
+               ]
+            }
+         ],
+         "scheduleTimeSpan": 15,
+         "blockOnDemandOrders": false,
+         "scheduleIntervalTime": 15,
+         "preSelectedStartTime": "2022-07-13T05:00:00Z",
+         "enableSameDayDelivery": false,
+         "sameDayNudgeDisplay": false,
+         "sameDayScheduleTimeSlots": null,
+         "earliestDeliveryTime": null,
+         "minAdvancePeriodInMin": 60
+      },
+      "deliveryOptions": [
+         "DELIVERY",
+         "TAKEAWAY"
+      ],
+      "sectionOpenHours": {
+         "open": false,
+         "displayedHours": "",
+         "sun": "00:00-23:59",
+         "mon": "00:00-23:59",
+         "tue": "00:00-23:59",
+         "wed": "00:00-23:59",
+         "thu": "00:00-23:59",
+         "fri": "00:00-23:59",
+         "sat": "00:00-23:59",
+         "tempClosed": false
+      },
+      "popularItems": [],
+      "status": "ACTIVE",
+      "sofConfiguration": {
+         "enabled": true,
+         "thresholdInMin": 0,
+         "thresholdForDisplay": null,
+         "calculationMode": "FixedFee",
+         "fixFeeInMin": 300000,
+         "fixFeeForDisplay": {
+            "amountInMinor": 300000,
+            "amountDisplay": "Rp3.000"
+         },
+         "tips": "Biaya pemesanan senilai Rp3.000 berlaku di restoran ini.",
+         "iconContent": {
+            "title": "Biaya Pemesanan",
+            "amountForDisplay": {
+               "amountInMinor": 300000,
+               "amountDisplay": "Rp3.000"
+            },
+            "desc": "Terima kasih telah memilih GrabFood sebagai mitra pengantaranmu. Biaya pemesanan ini akan digunakan untuk terus meningkatkan layanan kami dalam mengantarkan makanan favoritmu."
+         }
+      },
+      "comboMeals": null,
+      "subMerchantIDs": null,
+      "isLeadsGen": false,
+      "businessType": "FOOD",
+      "merchantClusterID": "",
+      "announcement": null,
+      "ratingDetail": [
+         {
+            "score": 1,
+            "voteCountPercentage": 2
+         },
+         {
+            "score": 2,
+            "voteCountPercentage": 2
+         },
+         {
+            "score": 3,
+            "voteCountPercentage": 2
+         },
+         {
+            "score": 4,
+            "voteCountPercentage": 10
+         },
+         {
+            "score": 5,
+            "voteCountPercentage": 81
+         }
+      ],
+      "deliveryTimeRange": "",
+      "hasTakeawayPricing": false,
+      "priceTag": 0,
+      "isBusy": false,
+      "littleIconLabel": null,
+      "haveSpecificItems": null,
+      "displayItemsInList": false,
+      "seeDetailsButton": null,
+      "partnerInfo": null,
+      "isGrabSupermarket": false,
+      "outOfStockInstructions": null,
+      "socialMedia": null,
+      "serviceBasedMenuEnabled": false,
+      "merchantGroupID": "IDMG20201107032201108660",
+      "photoHrefFallback": ""
+   },
+   "subMenuPageBanner": null,
+   "shoppingCart": {
+      "selectedItemCount": 0,
+      "shoppingCartList": null,
+      "merchantIDList": null,
+      "hasRemoved": false
+   },
+   "errorDialog": null,
+   "deliveryOptionsHandling": null,
+   "popupModal": null,
+   "enabledFeatures": 0
+}
