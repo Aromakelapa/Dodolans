@@ -1,0 +1,1050 @@
+{
+   "merchant": {
+      "ID": "6-C2EDMGBYUAUUTT",
+      "name": "Bubur Ayam Lek Imron - Kergon",
+      "cuisine": "Breakfast",
+      "photoHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/merchants/6-C2EDMGBYUAUUTT/hero/f499562458d645f0a49aad19bf2278ec_1638195757650754254.webp",
+      "timeZone": "Asia/Jakarta",
+      "ETA": 0,
+      "description": "",
+      "openingHours": {
+         "open": false,
+         "displayedHours": "Closed",
+         "sun": "05:20-21:00",
+         "mon": "05:15-21:00",
+         "tue": "05:15-21:00",
+         "wed": "05:15-21:00",
+         "thu": "05:15-21:00",
+         "fri": "05:20-21:00",
+         "sat": "05:20-21:00",
+         "tempClosed": false
+      },
+      "isIntegrated": true,
+      "phoneNumber": "6282324988517",
+      "distanceInKm": 0.586,
+      "section": "IDSEC20201221223939019063",
+      "latlng": {
+         "latitude": -6.8903153,
+         "longitude": 109.6710545,
+         "poiID": ""
+      },
+      "address": {
+         "name": "Bubur Ayam Lek Imron - Kergon",
+         "acronym": "",
+         "combined_address": "Jl. Sulawesi (Depan Salon Putri), Rt. 01/Rw. 14, Kergon, Pekalongan Barat, Pekalongan, Pekalongan, 51113",
+         "combined_city": "Semarang",
+         "house": "",
+         "street": "Jl. Sulawesi (Depan Salon Putri), Rt. 01/Rw. 14, Kergon, Pekalongan Barat, Pekalongan",
+         "suburb": "Pekalongan",
+         "postcode": "51113",
+         "city": "Semarang",
+         "cityId": 40,
+         "state": "",
+         "country": "Indonesia",
+         "countryID": 6,
+         "conbined_address": "",
+         "nameWithHtmlFormat": ""
+      },
+      "menu": {
+         "categories": [
+            {
+               "ID": "IDCAT2022030114394177081",
+               "name": "PAKET 5 \u00d7 BUBUR AYAM SEDERHANA",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2021111105063507344",
+                     "name": "PAKET HEMAT 5 KALI BUBUR AYAM ",
+                     "available": false,
+                     "priceInMinorUnit": 4500000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021111105063507344/photo/menueditor_item_f6860b97067a40668d3e11ee13b449c9_1636607142256650295.webp",
+                     "description": "MAKANAN",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 4500000,
+                     "priceV2": {
+                        "amountInMinor": 4500000,
+                        "amountDisplay": "45.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 4500000,
+                        "amountDisplay": "45.000"
+                     },
+                     "metadata": "",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": null,
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2021111105063507344",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 4500000,
+                     "discountedTakeawayPriceInMin": 4500000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021111105063507344/photo/menueditor_item_f6860b97067a40668d3e11ee13b449c9_1636607142256650295.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021111105063507344/detail/menueditor_item_f6860b97067a40668d3e11ee13b449c9_1636607142256650295.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2021111105051962504",
+               "name": "PAKE 3 KALI BUBUR AYAM KOMPLIT  SATE ",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2021111105074598880",
+                     "name": "PAKET HEMAT 3 KALI BUBUR AYAM + SATE",
+                     "available": false,
+                     "priceInMinorUnit": 3500000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021111105074598880/photo/menueditor_item_72ae6696bd1741c8b9960b6877935e8e_1636607226250943398.webp",
+                     "description": "MAKANAN",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 3500000,
+                     "priceV2": {
+                        "amountInMinor": 3500000,
+                        "amountDisplay": "35.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 3500000,
+                        "amountDisplay": "35.000"
+                     },
+                     "metadata": "",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": null,
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2021111105074598880",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 3500000,
+                     "discountedTakeawayPriceInMin": 3500000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021111105074598880/photo/menueditor_item_72ae6696bd1741c8b9960b6877935e8e_1636607226250943398.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021111105074598880/detail/menueditor_item_72ae6696bd1741c8b9960b6877935e8e_1636607226250943398.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2021091008440856876",
+               "name": "KRUPUK",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2021091008450933373",
+                     "name": "KRUPUK",
+                     "available": false,
+                     "priceInMinorUnit": 150000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021091008450933373/photo/menueditor_item_00a60be95f0849a3bfd07d39d4772d0e_1631263475897884049.webp",
+                     "description": "MAKANAN RINGAN",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 150000,
+                     "priceV2": {
+                        "amountInMinor": 150000,
+                        "amountDisplay": "1.500"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 150000,
+                        "amountDisplay": "1.500"
+                     },
+                     "metadata": "",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": null,
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2021091008450933373",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 150000,
+                     "discountedTakeawayPriceInMin": 150000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021091008450933373/photo/menueditor_item_00a60be95f0849a3bfd07d39d4772d0e_1631263475897884049.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021091008450933373/detail/menueditor_item_00a60be95f0849a3bfd07d39d4772d0e_1631263475897884049.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2021011014190206375",
+               "name": "BUBUR PUTIH POLOSAN  KUAH DAN KRUPUK",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2021071201513206669",
+                     "name": "Bubur putih polos",
+                     "available": false,
+                     "priceInMinorUnit": 700000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021071201513206669/photo/menueditor_item_baa92a3d53f6490fbd33574f3f968723_1626054654504552434.webp",
+                     "description": "makanan",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 700000,
+                     "priceV2": {
+                        "amountInMinor": 700000,
+                        "amountDisplay": "7.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 700000,
+                        "amountDisplay": "7.000"
+                     },
+                     "metadata": "",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": null,
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2021071201513206669",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 700000,
+                     "discountedTakeawayPriceInMin": 700000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021071201513206669/photo/menueditor_item_baa92a3d53f6490fbd33574f3f968723_1626054654504552434.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021071201513206669/detail/menueditor_item_baa92a3d53f6490fbd33574f3f968723_1626054654504552434.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2020122201061106160",
+               "name": "BUBUR AYAM KOMPLIT 3 SATE ",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2020122201151593965",
+                     "name": " BUBUR AYAM KOMLIT TIGA SATE ",
+                     "available": false,
+                     "priceInMinorUnit": 1600000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201151593965/photo/menueditor_item_b1041941ec834dc0a81e2d6781dfe71a_1608599688526821074.webp",
+                     "description": "BUBUR",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 1600000,
+                     "priceV2": {
+                        "amountInMinor": 1600000,
+                        "amountDisplay": "16.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 1600000,
+                        "amountDisplay": "16.000"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020122201151593965",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 1600000,
+                     "discountedTakeawayPriceInMin": 1600000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201151593965/photo/menueditor_item_b1041941ec834dc0a81e2d6781dfe71a_1608599688526821074.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201151593965/detail/menueditor_item_b1041941ec834dc0a81e2d6781dfe71a_1608599688526821074.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2020122201051503058",
+               "name": "SATE AMPELA ",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2020122201123162265",
+                     "name": "SATE JEROAN",
+                     "available": false,
+                     "priceInMinorUnit": 300000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201123162265/photo/menueditor_item_2b9d2ba0a7e64f938456066b33f9314d_1608599523756098131.webp",
+                     "description": "JEROAN AYAM",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 300000,
+                     "priceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020122201123162265",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 300000,
+                     "discountedTakeawayPriceInMin": 300000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201123162265/photo/menueditor_item_2b9d2ba0a7e64f938456066b33f9314d_1608599523756098131.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201123162265/detail/menueditor_item_2b9d2ba0a7e64f938456066b33f9314d_1608599523756098131.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2020122201045497828",
+               "name": "SATE USUS",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2020122201091404911",
+                     "name": "SATE USUS",
+                     "available": false,
+                     "priceInMinorUnit": 300000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201091404911/photo/menueditor_item_e1c8579368d246609e929ca89e6cc5fd_1608599329589866865.webp",
+                     "description": "USUS",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 300000,
+                     "priceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "metadata": "",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": null,
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020122201091404911",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 300000,
+                     "discountedTakeawayPriceInMin": 300000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201091404911/photo/menueditor_item_e1c8579368d246609e929ca89e6cc5fd_1608599329589866865.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201091404911/detail/menueditor_item_e1c8579368d246609e929ca89e6cc5fd_1608599329589866865.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2020122201042184534",
+               "name": "SATE TELOR",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2020122201132661180",
+                     "name": "SATE TELUR",
+                     "available": false,
+                     "priceInMinorUnit": 300000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201132661180/photo/menueditor_item_57ffe731d66d4f0885c17f9784092d8c_1608599584971151488.webp",
+                     "description": "TELUR",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 300000,
+                     "priceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020122201132661180",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 300000,
+                     "discountedTakeawayPriceInMin": 300000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201132661180/photo/menueditor_item_57ffe731d66d4f0885c17f9784092d8c_1608599584971151488.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201132661180/detail/menueditor_item_57ffe731d66d4f0885c17f9784092d8c_1608599584971151488.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2020122201040608906",
+               "name": "TEH  PANAS",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2020122201142788080",
+                     "name": "MINUMAN",
+                     "available": false,
+                     "priceInMinorUnit": 300000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201142788080/photo/menueditor_item_45dbed0ca9b14acfa03e35a853035ed7_1608599644469149637.webp",
+                     "description": "TEH ",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 300000,
+                     "priceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020122201142788080",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 300000,
+                     "discountedTakeawayPriceInMin": 300000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201142788080/photo/menueditor_item_45dbed0ca9b14acfa03e35a853035ed7_1608599644469149637.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201142788080/detail/menueditor_item_45dbed0ca9b14acfa03e35a853035ed7_1608599644469149637.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2020122122403236864",
+               "name": "BUBUR AYAM KOMPLIT  DUA SATE",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2020122201103588516",
+                     "name": "BUBUR AYAM  KOMPLIT 2 SATE",
+                     "available": false,
+                     "priceInMinorUnit": 1400000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201103588516/photo/menueditor_item_1dce9b2e0c224dd28f942c8629609b9b_1608599407451769959.webp",
+                     "description": "MAKANAN",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 1400000,
+                     "priceV2": {
+                        "amountInMinor": 1400000,
+                        "amountDisplay": "14.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 1400000,
+                        "amountDisplay": "14.000"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020122201103588516",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 1400000,
+                     "discountedTakeawayPriceInMin": 1400000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201103588516/photo/menueditor_item_1dce9b2e0c224dd28f942c8629609b9b_1608599407451769959.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201103588516/detail/menueditor_item_1dce9b2e0c224dd28f942c8629609b9b_1608599407451769959.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            },
+            {
+               "ID": "IDCAT2020122122393909572",
+               "name": "BUBUR AYAM SEDERHANA",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2020122201113952390",
+                     "name": "BUBUR AYAM SEDERHANA",
+                     "available": false,
+                     "priceInMinorUnit": 1000000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201113952390/photo/menueditor_item_0c73a7073d6b434c950a43c6616ed1e6_1608599467207450338.webp",
+                     "description": "MAKANAN",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 1000000,
+                     "priceV2": {
+                        "amountInMinor": 1000000,
+                        "amountDisplay": "10.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 1000000,
+                        "amountDisplay": "10.000"
+                     },
+                     "metadata": "{}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "3f5dcf08-33b7-4002-b99b-78cb1adf7c64",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2020122201113952390",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 1000000,
+                     "discountedTakeawayPriceInMin": 1000000,
+                     "merchantID": "6-C2EDMGBYUAUUTT",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201113952390/photo/menueditor_item_0c73a7073d6b434c950a43c6616ed1e6_1608599467207450338.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2020122201113952390/detail/menueditor_item_0c73a7073d6b434c950a43c6616ed1e6_1608599467207450338.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            }
+         ],
+         "menuMeta": {
+            "orderValueLimit": 200000000,
+            "disableItemComment": false,
+            "itemLimit": 0
+         },
+         "campaigns": [],
+         "omegaOffers": [],
+         "departments": null,
+         "menuItemType": "",
+         "isCampaignRequestThrottled": false,
+         "stackableOfferOption": 2,
+         "stackableOffers": null
+      },
+      "currency": {
+         "code": "IDR",
+         "symbol": "Rp",
+         "exponent": 2
+      },
+      "rating": 4.8,
+      "voteCount": 85,
+      "deliverBy": "GRAB",
+      "radius": 11000,
+      "estimatedDeliveryFee": {
+         "currency": {
+            "code": "IDR",
+            "symbol": "RP",
+            "exponent": 2
+         },
+         "highlighted": false,
+         "price": 500000,
+         "priceDisplay": "Rp5.000",
+         "status": 0,
+         "multiplier": 1
+      },
+      "promo": null,
+      "allowTakeAway": false,
+      "isUserFavorite": false,
+      "specialMerchantType": "",
+      "schedulerOrderConfig": {
+         "enableScheduleOrder": true,
+         "scheduleTimeSlots": [
+            {
+               "timeSlots": [
+                  {
+                     "from": "2022-07-15T00:20:00Z",
+                     "to": "2022-07-15T13:30:00Z",
+                     "available": true,
+                     "reason": ""
+                  }
+               ]
+            },
+            {
+               "timeSlots": [
+                  {
+                     "from": "2022-07-16T00:20:00Z",
+                     "to": "2022-07-16T13:30:00Z",
+                     "available": true,
+                     "reason": ""
+                  }
+               ]
+            }
+         ],
+         "scheduleTimeSpan": 15,
+         "blockOnDemandOrders": false,
+         "scheduleIntervalTime": 15,
+         "preSelectedStartTime": "2022-07-15T05:00:00Z",
+         "enableSameDayDelivery": false,
+         "sameDayNudgeDisplay": false,
+         "sameDayScheduleTimeSlots": null,
+         "earliestDeliveryTime": null,
+         "minAdvancePeriodInMin": 60
+      },
+      "deliveryOptions": [
+         "DELIVERY",
+         "TAKEAWAY"
+      ],
+      "sectionOpenHours": {
+         "open": false,
+         "displayedHours": "",
+         "sun": "00:00-23:59",
+         "mon": "00:00-23:59",
+         "tue": "00:00-23:59",
+         "wed": "00:00-23:59",
+         "thu": "00:00-23:59",
+         "fri": "00:00-23:59",
+         "sat": "00:00-23:59",
+         "tempClosed": false
+      },
+      "popularItems": [],
+      "status": "ACTIVE",
+      "sofConfiguration": {
+         "enabled": true,
+         "thresholdInMin": 0,
+         "thresholdForDisplay": null,
+         "calculationMode": "FixedFee",
+         "fixFeeInMin": 300000,
+         "fixFeeForDisplay": {
+            "amountInMinor": 300000,
+            "amountDisplay": "Rp3.000"
+         },
+         "tips": "Biaya pemesanan senilai Rp3.000 berlaku di restoran ini.",
+         "iconContent": {
+            "title": "Biaya Pemesanan",
+            "amountForDisplay": {
+               "amountInMinor": 300000,
+               "amountDisplay": "Rp3.000"
+            },
+            "desc": "Terima kasih telah memilih GrabFood sebagai mitra pengantaranmu. Biaya pemesanan ini akan digunakan untuk terus meningkatkan layanan kami dalam mengantarkan makanan favoritmu."
+         }
+      },
+      "comboMeals": null,
+      "subMerchantIDs": null,
+      "isLeadsGen": false,
+      "businessType": "FOOD",
+      "merchantClusterID": "",
+      "announcement": null,
+      "ratingDetail": [
+         {
+            "score": 1,
+            "voteCountPercentage": 1
+         },
+         {
+            "score": 2,
+            "voteCountPercentage": 1
+         },
+         {
+            "score": 3,
+            "voteCountPercentage": 2
+         },
+         {
+            "score": 4,
+            "voteCountPercentage": 9
+         },
+         {
+            "score": 5,
+            "voteCountPercentage": 85
+         }
+      ],
+      "deliveryTimeRange": "",
+      "hasTakeawayPricing": false,
+      "priceTag": 0,
+      "isBusy": false,
+      "littleIconLabel": null,
+      "haveSpecificItems": null,
+      "displayItemsInList": false,
+      "seeDetailsButton": null,
+      "partnerInfo": null,
+      "isGrabSupermarket": false,
+      "outOfStockInstructions": null,
+      "socialMedia": null,
+      "serviceBasedMenuEnabled": false,
+      "merchantGroupID": "IDMG20201219063715037707",
+      "photoHrefFallback": ""
+   },
+   "subMenuPageBanner": null,
+   "shoppingCart": {
+      "selectedItemCount": 0,
+      "shoppingCartList": null,
+      "merchantIDList": null,
+      "hasRemoved": false
+   },
+   "errorDialog": null,
+   "deliveryOptionsHandling": null,
+   "popupModal": null,
+   "enabledFeatures": 0
+}
