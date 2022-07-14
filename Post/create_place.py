@@ -1,16 +1,18 @@
 import requests
 import json
 
+# LOAD DATA MERCHANT GRAB
 son = open('data/data.json')
 data = json.load(son)
+
+# TOKEN LOGIN DODOLANS
 token = input('token : ')
 
-# Create Place
+# CREATE PLACE
 url_create_place = 'https://www.jagel.id/api/v3/partner/create_place.php'
 
 print("\nMerchant : " + data['merchant']['name'])
-print('\n##### Opening Hours')
-print('Jika tutup input 0, jika buka input 1\nJika tutup, jam & menit input -1')
+print('Jika tutup input 0, jika buka input 1\nJika tutup, jam & menit input -1\n')
 print('Label tersedia : cafe, mie dan bakso, warung, minuman, mie, sarapan, jajanan, promo, penyetan, kue, 24jam, terlaris, jamu, oleh, toko, pakaian, buah, sayur, sembako, satenasgor\n')
 
 bodyCP = {
@@ -70,40 +72,48 @@ bodyCP = {
 
 y = "y"
 
-if input('Lanjut input y : ') == y:
-  print('Create Place')
+if input('\nLanjut? input y : ') == y:
+  print('\nCreate Place')
   requestsCP = requests.post(url_create_place, data=bodyCP)
 
+  # REQUEST CREATE PLACE STARTED
   print('Status : ', requestsCP.status_code)
   responseCP = json.dumps(requestsCP.json(), indent=3)
   print(responseCP)
   print()
 
-  # Upload Image
-  load = json.loads(responseCP)
-  # title = json.loads(responseCP)['list']['title']
+  # UPLOAD IMAGE
+  load = json.loads(responseCP) # ambil response object dari create_place
+  view_uid = load['list']['view_uid'] # view_uid dari response create_place
+  title = load['list']['title'] # title dari response create_place
 
-  image = open('data/image.txt', 'r').read()
+  # LOAD IMAGE DODOLANS BASE64
+  image = open('data/image.txt', 'r').read() # string
 
   url_upload_image = 'https://www.jagel.id/api/v3/partner/upload_image.php'
   bodyUI = {
-    "image": f"{image}",
+    "image": image,
     "hl": "in",
-    "view_uid": f"{load['list']['view_uid']}",
+    "view_uid": view_uid,
     "appuid": "5f3e3c3c77909",
     "position": "0",
-    "title": f"{load['list']['title']}",
+    "title": title,
     "token": token,
     "image_type": "jpg"
   }
 
   requestsUI = requests.post(url_upload_image, data=bodyUI)
 
-  print('Status : ', requestsUI.status_code)
-  print(requestsUI.json())
-  
+  # REQUEST UPLOAD IMAGE STARTED
+  print('Status : ', requestsUI.status_code) # response status code
+  print(requestsUI.json()) # response json
+
 else:
   pass
+
+
+
+
 
 # Hiraukan
 # Data Images

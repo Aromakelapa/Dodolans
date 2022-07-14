@@ -1,0 +1,430 @@
+{
+   "merchant": {
+      "ID": "6-C2UFE3JHUA5FWE",
+      "name": "Bubur Ayam Mas Nanang - Noyontaan",
+      "cuisine": "Cepat Saji,Aneka Nasi",
+      "photoHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/merchants/6-C2UFE3JHUA5FWE/hero/ebae854293f04944b6e4b3b639f1bab5_1632792277877157363.webp",
+      "timeZone": "Asia/Jakarta",
+      "ETA": 0,
+      "description": "",
+      "openingHours": {
+         "open": false,
+         "displayedHours": "Closed",
+         "sun": "06:00-09:00",
+         "mon": "06:00-09:00",
+         "tue": "06:00-09:00",
+         "wed": "06:00-09:00",
+         "thu": "06:00-09:00",
+         "fri": "06:00-08:30",
+         "sat": "06:00-09:00",
+         "tempClosed": false
+      },
+      "isIntegrated": true,
+      "phoneNumber": "6282322644946",
+      "distanceInKm": 0.775,
+      "section": "IDSEC20210922002010014755",
+      "latlng": {
+         "latitude": -6.896415,
+         "longitude": 109.680374,
+         "poiID": ""
+      },
+      "address": {
+         "name": "Bubur Ayam Mas Nanang - Noyontaan",
+         "acronym": "",
+         "combined_address": "Jl.Dr.wahidin, depan Super Indo Pekalongan, Pekalongan, 51129",
+         "combined_city": "Semarang",
+         "house": "",
+         "street": "Jl.Dr.wahidin, depan Super Indo Pekalongan",
+         "suburb": "Pekalongan",
+         "postcode": "51129",
+         "city": "Semarang",
+         "cityId": 40,
+         "state": "",
+         "country": "Indonesia",
+         "countryID": 6,
+         "conbined_address": "",
+         "nameWithHtmlFormat": ""
+      },
+      "menu": {
+         "categories": [
+            {
+               "ID": "IDCAT2021092200201051498",
+               "name": "Bubur Ayam",
+               "available": true,
+               "items": [
+                  {
+                     "ID": "IDITE2021121422582969230",
+                     "name": "sate satean",
+                     "available": true,
+                     "priceInMinorUnit": 300000,
+                     "imgHref": "",
+                     "description": "random/ bisa reques",
+                     "modifierGroups": null,
+                     "sortOrder": 3,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 300000,
+                     "priceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 300000,
+                        "amountDisplay": "3.000"
+                     },
+                     "metadata": "",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": null,
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "23072bf5-338e-402a-b590-e84374e5e8d7",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2021121422582969230",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 300000,
+                     "discountedTakeawayPriceInMin": 300000,
+                     "merchantID": "6-C2UFE3JHUA5FWE",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [],
+                     "images": [],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  },
+                  {
+                     "ID": "IDITE2021092200290739564",
+                     "name": "Bubur ayam spesial",
+                     "available": true,
+                     "priceInMinorUnit": 1000000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021092200290739564/photo/menueditor_item_c8a1e5a94b21498ba2203934e9634c8d_1632270504624727876.webp",
+                     "description": "komplit",
+                     "modifierGroups": null,
+                     "sortOrder": 2,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 1000000,
+                     "priceV2": {
+                        "amountInMinor": 1000000,
+                        "amountDisplay": "10.000"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 1000000,
+                        "amountDisplay": "10.000"
+                     },
+                     "metadata": "{\"discount_meta\":{}}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "23072bf5-338e-402a-b590-e84374e5e8d7",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2021092200290739564",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 1000000,
+                     "discountedTakeawayPriceInMin": 1000000,
+                     "merchantID": "6-C2UFE3JHUA5FWE",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021092200290739564/photo/menueditor_item_c8a1e5a94b21498ba2203934e9634c8d_1632270504624727876.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021092200290739564/detail/menueditor_item_c8a1e5a94b21498ba2203934e9634c8d_1632270504624727876.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  },
+                  {
+                     "ID": "IDITE2021092200265814492",
+                     "name": "Bubur ayam spesial+2 sate",
+                     "available": true,
+                     "priceInMinorUnit": 1450000,
+                     "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021092200265814492/photo/menueditor_item_e346ea8d725447469b0fcdbeec7924e7_1632270155531064558.webp",
+                     "description": "dengan toping ayam suwir,bawang goreng,kacang kedelai,daun bawang,emping dan kerupuk +2sate(random)",
+                     "modifierGroups": null,
+                     "sortOrder": 1,
+                     "campaignID": "",
+                     "campaignName": "",
+                     "discountedPriceInMin": 1450000,
+                     "priceV2": {
+                        "amountInMinor": 1450000,
+                        "amountDisplay": "14.500"
+                     },
+                     "discountedPriceV2": {
+                        "amountInMinor": 1450000,
+                        "amountDisplay": "14.500"
+                     },
+                     "metadata": "{\"discount_meta\":{}}",
+                     "discountPercentage": "",
+                     "thumbImgHref": "",
+                     "relatedComboIDs": null,
+                     "comboItemQuantity": 0,
+                     "recommendationSource": 0,
+                     "itemAttributes": {
+                        "maxCount": 0,
+                        "displayedTexts": {
+                           "weight": "",
+                           "volume": ""
+                        },
+                        "attributes": null
+                     },
+                     "itemClassID": "",
+                     "specialItemType": "",
+                     "discoveryMetadata": {
+                        "origin": null,
+                        "discovery": {
+                           "requestID": "23072bf5-338e-402a-b590-e84374e5e8d7",
+                           "service": "food-dataservice",
+                           "method": "GetMerchantActiveItems",
+                           "discoverID": "IDITE2021092200265814492",
+                           "rerankMethod": "",
+                           "searchFeatures": "",
+                           "customDimensions": "",
+                           "defaultRankGroupID": "",
+                           "defaultRankFormula": "",
+                           "postRerankGroupID": "",
+                           "ALTERNATIVE_MERCHANT": "",
+                           "recallSource": ""
+                        }
+                     },
+                     "takeawayPriceInMin": 1450000,
+                     "discountedTakeawayPriceInMin": 1450000,
+                     "merchantID": "6-C2UFE3JHUA5FWE",
+                     "searchMeta": null,
+                     "hideOnMenu": false,
+                     "currency": "",
+                     "thumbImages": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021092200265814492/photo/menueditor_item_e346ea8d725447469b0fcdbeec7924e7_1632270155531064558.webp"
+                     ],
+                     "images": [
+                        "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE2021092200265814492/detail/menueditor_item_e346ea8d725447469b0fcdbeec7924e7_1632270155531064558.webp"
+                     ],
+                     "imgHrefFallback": "",
+                     "campaigns": null
+                  }
+               ],
+               "sortOrder": 100,
+               "categoryType": 0,
+               "markdownMeta": "",
+               "subTitle": ""
+            }
+         ],
+         "menuMeta": {
+            "orderValueLimit": 200000000,
+            "disableItemComment": false,
+            "itemLimit": 0
+         },
+         "campaigns": [
+            {
+               "ID": "SSCSRGArea4PreSegme-C3CWPBTFA8KGLN-78374529",
+               "campaignLevel": "delivery_fee",
+               "campaignType": "delivery",
+               "startTime": "2022-02-20T15:00:00Z",
+               "endTime": "2030-12-28T14:26:00Z",
+               "label": "",
+               "name": "Diskon Rp7.000 untuk ongkos kirim",
+               "priority": "low",
+               "status": "ongoing",
+               "tcDetails": [
+                  "Berlaku di cabang-cabang tertentu",
+                  "Diskon maksimal Rp7.000",
+                  "Berlaku dari 2022-02-20 22:00 sampai 2030-12-28 21:26"
+               ],
+               "nameForMex": "Semarang SSC  Normal Delivery Fee",
+               "businessTag": 2,
+               "hidden": true
+            }
+         ],
+         "omegaOffers": [],
+         "departments": null,
+         "menuItemType": "",
+         "isCampaignRequestThrottled": false,
+         "stackableOfferOption": 2,
+         "stackableOffers": null
+      },
+      "currency": {
+         "code": "IDR",
+         "symbol": "Rp",
+         "exponent": 2
+      },
+      "rating": 4.5,
+      "voteCount": 4,
+      "deliverBy": "GRAB",
+      "radius": 11000,
+      "estimatedDeliveryFee": {
+         "currency": {
+            "code": "IDR",
+            "symbol": "RP",
+            "exponent": 2
+         },
+         "highlighted": false,
+         "price": 100000,
+         "priceDisplay": "Rp1.000",
+         "status": 0,
+         "multiplier": 1
+      },
+      "promo": null,
+      "allowTakeAway": false,
+      "isUserFavorite": false,
+      "specialMerchantType": "",
+      "schedulerOrderConfig": {
+         "enableScheduleOrder": true,
+         "scheduleTimeSlots": [
+            {
+               "timeSlots": [
+                  {
+                     "from": "2022-07-14T01:00:00Z",
+                     "to": "2022-07-14T01:30:00Z",
+                     "available": true,
+                     "reason": ""
+                  }
+               ]
+            }
+         ],
+         "scheduleTimeSpan": 15,
+         "blockOnDemandOrders": false,
+         "scheduleIntervalTime": 15,
+         "preSelectedStartTime": "2022-07-14T05:00:00Z",
+         "enableSameDayDelivery": false,
+         "sameDayNudgeDisplay": false,
+         "sameDayScheduleTimeSlots": null,
+         "earliestDeliveryTime": null,
+         "minAdvancePeriodInMin": 120
+      },
+      "deliveryOptions": [
+         "DELIVERY",
+         "TAKEAWAY"
+      ],
+      "sectionOpenHours": {
+         "open": false,
+         "displayedHours": "",
+         "sun": "00:00-23:59",
+         "mon": "00:00-23:59",
+         "tue": "00:00-23:59",
+         "wed": "00:00-23:59",
+         "thu": "00:00-23:59",
+         "fri": "00:00-23:59",
+         "sat": "00:00-23:59",
+         "tempClosed": false
+      },
+      "popularItems": [],
+      "status": "ACTIVE",
+      "sofConfiguration": {
+         "enabled": true,
+         "thresholdInMin": 0,
+         "thresholdForDisplay": null,
+         "calculationMode": "FixedFee",
+         "fixFeeInMin": 300000,
+         "fixFeeForDisplay": {
+            "amountInMinor": 300000,
+            "amountDisplay": "Rp3.000"
+         },
+         "tips": "Biaya pemesanan senilai Rp3.000 berlaku di restoran ini.",
+         "iconContent": {
+            "title": "Biaya Pemesanan",
+            "amountForDisplay": {
+               "amountInMinor": 300000,
+               "amountDisplay": "Rp3.000"
+            },
+            "desc": "Terima kasih telah memilih GrabFood sebagai mitra pengantaranmu. Biaya pemesanan ini akan digunakan untuk terus meningkatkan layanan kami dalam mengantarkan makanan favoritmu."
+         }
+      },
+      "comboMeals": null,
+      "subMerchantIDs": null,
+      "isLeadsGen": false,
+      "businessType": "FOOD",
+      "merchantClusterID": "",
+      "announcement": null,
+      "ratingDetail": [
+         {
+            "score": 1,
+            "voteCountPercentage": 0
+         },
+         {
+            "score": 2,
+            "voteCountPercentage": 0
+         },
+         {
+            "score": 3,
+            "voteCountPercentage": 25
+         },
+         {
+            "score": 4,
+            "voteCountPercentage": 0
+         },
+         {
+            "score": 5,
+            "voteCountPercentage": 75
+         }
+      ],
+      "deliveryTimeRange": "",
+      "hasTakeawayPricing": false,
+      "priceTag": 0,
+      "isBusy": false,
+      "littleIconLabel": null,
+      "haveSpecificItems": null,
+      "displayItemsInList": false,
+      "seeDetailsButton": null,
+      "partnerInfo": null,
+      "isGrabSupermarket": false,
+      "outOfStockInstructions": null,
+      "socialMedia": null,
+      "serviceBasedMenuEnabled": false,
+      "merchantGroupID": "IDMG20210618074218125113",
+      "photoHrefFallback": ""
+   },
+   "subMenuPageBanner": null,
+   "shoppingCart": {
+      "selectedItemCount": 0,
+      "shoppingCartList": null,
+      "merchantIDList": null,
+      "hasRemoved": false
+   },
+   "errorDialog": null,
+   "deliveryOptionsHandling": null,
+   "popupModal": null,
+   "enabledFeatures": 0
+}
