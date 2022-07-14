@@ -111,7 +111,7 @@ bodyCreate = {
   "component_view_uid": '6215d6e509e7f',
   "title": merchant['merchant']['name'],
   "content": merchant['merchant']['cuisine'],
-  "label": "jajanan",
+  "label": input('Label : '),
   "origin_address": merchant['merchant']['address']['combined_address'],
   "origin_lat": merchant['merchant']['latlng']['latitude'],
   "origin_lng": merchant['merchant']['latlng']['longitude'],
