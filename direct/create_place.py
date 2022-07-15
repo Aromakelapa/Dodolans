@@ -16,15 +16,15 @@ cend = '\33[0m'
 
 # LOGIN DODOLANS
 
-print('### Mengecek Token...\n')
+print(f'{credy}Mengecek Token...{cend}\n')
 sleep(2)
 if os.path.exists('data/token.txt'):
-	print("Token ditemukan")
+	print(f"{credg}Token ditemukan{credg}\n")
 	sleep(1)
 	print("Login dilewat")
 	sleep(1)
 else:
-	print ("Token tidak ditemukan")
+	print (f"{credr}Token tidak ditemukan{cend}\n")
 	sleep(1)
 	print('Login')
 	sleep(1)
@@ -40,7 +40,7 @@ else:
 	}
 	rLogin = requests.post(urlLogin, data = bodyLogin)
 
-	print('Login Status :', rLogin.status_code)
+	print(f'Login Status : {credg}{rLogin.status_code}{cend}')
 
 	dumps = json.dumps(rLogin.json(), indent=3)
 	token = json.loads(dumps)['token']
@@ -51,13 +51,13 @@ else:
 	with open('data/token.txt', 'w') as file:
 		file.write(token)
 		file.close
-	print('Token tersimpan di data/token.txt')
+	print(f'{credg}Token tersimpan di data/token.txt{cend}')
 
 
 
 # GET DATA MERCHANT FROM GRABFOOD
 
-print("\n### Grabing Data Merchant From GrabFood\n")
+print(f"\n{credy}Grabing Data Merchant From GrabFood{cend}\n")
 sleep(1)
 urlGrab = f'https://p.grabtaxi.com/api/passenger/v4/grabfood/merchants/{input("ID Merchant : ")}?latlng=-6.890702%2C109.676352'
 headGrab = {
@@ -72,13 +72,13 @@ headGrab = {
 
 rGrab = requests.get(urlGrab, headers = headGrab)
 
-print('Status :', rGrab.status_code)
+print(f'Status : {credg}{rGrab.status_code}{cend}')
 sleep(1)
 dumps = json.dumps(rGrab.json(), indent = 3)
 with open('data/data.json', 'w') as file:
 	file.write(dumps)
 	file.close
-print('Data Merchant tersimpan di data/data.json\n')
+print(f'{credg}Data Merchant tersimpan di data/data.json\n{cend}')
 sleep(1)
 
 
@@ -156,12 +156,12 @@ if confirm == "y":
   rCreate = requests.post(urlCreate, data=bodyCreate)
 
   print()
-  print(f"Input Merchant {merchant['merchant']['name']} Berhasil | Status : {rCreate.status_code}")
+  print(f"(+) Input Merchant {merchant['merchant']['name']} Berhasil | Status : {credg}{rCreate.status_code}{cend}")
   sleep(1)
   loadsss = json.loads(json.dumps(rCreate.json()))
   response = loadsss['error']
   parent = loadsss['list']['view_uid']
-  print('Error :', response)
+  print(f'   Error : {response}')
   print()
   sleep(1)
 else:
@@ -202,12 +202,14 @@ print('\nDone')
 
 # CREATE PRODUCT
 
-print('\nID Kecamatan Tersedia :')
+# print('\nID Kecamatan Tersedia :')
 print('Pekalongan Barat : 10')
 print('Pekalongan Selatan : 11')
 print('Pekalongan Timur : 12')
 print('Pekalongan Utara : 13')
+print()
 district = f"49{input('ID Kecamatan : ')}"
+print()
 categories = merchant['merchant']['menu']['categories']
 for n in range(len(categories)):
 	try:
@@ -241,16 +243,14 @@ for n in range(len(categories)):
 			# print(items[i]['name'])
 
 			rProduct = requests.post(urlProduct, data=bodyProduct)
-			print(f"Input {items[i]['name']} Berhasil | Status : {rProduct.status_code}")
-			print("Error : ", json.loads(json.dumps(rProduct.json()))['error'])
+			print(f"(+)Input {items[i]['name']} Berhasil | Status : {rProduct.status_code}")
+			print("    Error : ", json.loads(json.dumps(rProduct.json()))['error'])
 
 			# UPLOADE IMAGE
 			dumps = json.dumps(rProduct.json())
 			loads = json.loads(dumps)
 			view_uid = loads['list']['view_uid']
 			title = loads['list']['title']
-			image = open('image.txt', 'r').read() # string
-
 			urlProduct_Upload = 'https://www.jagel.id/api/v3/partner/upload_image.php'
 			bodyProduct_Upload = {
 				"image": image, #PerluDiubah
@@ -265,12 +265,13 @@ for n in range(len(categories)):
 
 			rProduct_Upload = requests.post(urlProduct_Upload, data=bodyProduct_Upload)
 
-			print('Upload Image Status : ', rProduct_Upload.status_code) # response status code
+			print('(*)Upload Image Status : ', rProduct_Upload.status_code) # response status code
 			sleep(1)
 			response = json.loads(json.dumps(rProduct_Upload.json()))['error']
-			print('Error :', response) # response json
+			print('    Error :', response) # response json
 			sleep(1)
-			print('\nDone')
+			print(f'{credg}Done{cend}')
+			print()
 	except:
-		print(f'Item tidak ditemukan di kategori {n}')
+		print(f'{credr}Item tidak ditemukan di kategori {n}{cend}')
 
