@@ -19,10 +19,10 @@ cend = '\33[0m'
 print('### Mengecek Token...\n')
 sleep(2)
 if os.path.exists('data/token.txt'):
-    print("Token ditemukan")
-    sleep(1)
-    print("Login dilewat")
-    sleep(1)
+	print("Token ditemukan")
+	sleep(1)
+	print("Login dilewat")
+	sleep(1)
 else:
 	print ("Token tidak ditemukan")
 	sleep(1)
@@ -30,13 +30,13 @@ else:
 	sleep(1)
 	urlLogin = "https://www.jagel.id/api/v3/basic/login.php"
 	bodyLogin = {
-	    "username": input('Username : '),
-	    "password": input('Password : '),
-	    "hl": 'in',
-	    "imei": '7154624f6161616150737859516746456847634c506c7376536e797064446800',
-	    "appuid": '5f3e3c3c77909',
-	    "firebase_token": 'e6Gwmju3S9WOQZq8MfvsCX:APA91bGgTAnMH9dx2UVhfYUqSKlc4Di_BhkcelLYqNb0Rv6WYsCLul8KJjKbESgQ4WimRiGAIamc2rgeU0AdAopv1LprwwuP3Dl8xhS3-asvYP8j5MyGZzSfGVLunzyuDcR22ZASinab',
-	    "firebase_type": '1'
+		"username": input('Username : '),
+		"password": input('Password : '),
+		"hl": 'in',
+		"imei": '7154624f6161616150737859516746456847634c506c7376536e797064446800',
+		"appuid": '5f3e3c3c77909',
+		"firebase_token": 'e6Gwmju3S9WOQZq8MfvsCX:APA91bGgTAnMH9dx2UVhfYUqSKlc4Di_BhkcelLYqNb0Rv6WYsCLul8KJjKbESgQ4WimRiGAIamc2rgeU0AdAopv1LprwwuP3Dl8xhS3-asvYP8j5MyGZzSfGVLunzyuDcR22ZASinab',
+		"firebase_type": '1'
 	}
 	rLogin = requests.post(urlLogin, data = bodyLogin)
 
@@ -44,9 +44,13 @@ else:
 
 	dumps = json.dumps(rLogin.json(), indent=3)
 	token = json.loads(dumps)['token']
+	try:
+		os.mkdir('data')
+	except:
+		pass
 	with open('data/token.txt', 'w') as file:
-	    file.write(token)
-	    file.close
+		file.write(token)
+		file.close
 	print('Token tersimpan di data/token.txt')
 
 
@@ -91,17 +95,17 @@ listHour = []
 idx = 1
 
 for i in day:
-    ex = []
-    hour = merchant['merchant']['openingHours'][i]
-    txt = hour.split("-")
-    if len(txt) == 1:
-        listHour.append(txt)
-    else:
-        sh_sm = txt[0].split(':')
-        eh_em = txt[1].split(':')
-        ex.append(sh_sm)
-        ex.append(eh_em)
-        listHour.append(ex)
+	ex = []
+	hour = merchant['merchant']['openingHours'][i]
+	txt = hour.split("-")
+	if len(txt) == 1:
+		listHour.append(txt)
+	else:
+		sh_sm = txt[0].split(':')
+		eh_em = txt[1].split(':')
+		ex.append(sh_sm)
+		ex.append(eh_em)
+		listHour.append(ex)
 # print(listHour)
 # END LIST HOUR
 
@@ -128,32 +132,35 @@ bodyCreate = {
 
 # START ADD DICTIOMARY HOUR
 for j in listHour:
-    if len(j) < 2:
-        bodyCreate[f"day_{idx}"] = 0
-        bodyCreate[f"day{idx}_start_hour"] = -1
-        bodyCreate[f"day{idx}_start_minute"] = -1
-        bodyCreate[f"day{idx}_end_hour"] = -1
-        bodyCreate[f"day{idx}_end_minute"] = -1
-    else:
-        bodyCreate[f"day_{idx}"] = 1
-        bodyCreate[f"day{idx}_start_hour"] = j[0][0]
-        bodyCreate[f"day{idx}_start_minute"] = j[0][1]
-        bodyCreate[f"day{idx}_end_hour"] = j[1][0]
-        bodyCreate[f"day{idx}_end_minute"] = j[1][1]
-    idx += 1
+	if len(j) < 2:
+		bodyCreate[f"day_{idx}"] = 0
+		bodyCreate[f"day{idx}_start_hour"] = -1
+		bodyCreate[f"day{idx}_start_minute"] = -1
+		bodyCreate[f"day{idx}_end_hour"] = -1
+		bodyCreate[f"day{idx}_end_minute"] = -1
+	else:
+		bodyCreate[f"day_{idx}"] = 1
+		bodyCreate[f"day{idx}_start_hour"] = j[0][0]
+		bodyCreate[f"day{idx}_start_minute"] = j[0][1]
+		bodyCreate[f"day{idx}_end_hour"] = j[1][0]
+		bodyCreate[f"day{idx}_end_minute"] = j[1][1]
+	idx += 1
 # START ADD DICTIOMARY HOUR
 
 print("\n" + f"{credy}Nama Merchant '{merchant['merchant']['name']}'{cend}")
 print("Apakah anda yakin input merchant ini?")
 confirm = str.lower(input(f"{credg}[y]Yes{cend} or {credr}[n]No{cend} : "))
 
+parent = ""
 if confirm == "y":
   rCreate = requests.post(urlCreate, data=bodyCreate)
 
   print()
   print(f"Input Merchant {merchant['merchant']['name']} Berhasil | Status : {rCreate.status_code}")
   sleep(1)
-  response = json.loads(json.dumps(rCreate.json()))['error']
+  loadsss = json.loads(json.dumps(rCreate.json()))
+  response = loadsss['error']
+  parent = loadsss['list']['view_uid']
   print('Error :', response)
   print()
   sleep(1)
@@ -168,7 +175,7 @@ dumps = json.dumps(rCreate.json())
 loads = json.loads(dumps)
 view_uid = loads['list']['view_uid']
 title = loads['list']['title']
-image = open('data/image.txt', 'r').read() # string
+image = open('dodolanImage.txt', 'r').read() # string
 
 urlUpload = 'https://www.jagel.id/api/v3/partner/upload_image.php'
 bodyUpload = {
@@ -190,3 +197,80 @@ response = json.loads(json.dumps(rUpload.json()))['error']
 print('Error :', response) # response json
 sleep(1)
 print('\nDone')
+
+
+
+# CREATE PRODUCT
+
+print('\nID Kecamatan Tersedia :')
+print('Pekalongan Barat : 10')
+print('Pekalongan Selatan : 11')
+print('Pekalongan Timur : 12')
+print('Pekalongan Utara : 13')
+district = f"49{input('ID Kecamatan : ')}"
+categories = merchant['merchant']['menu']['categories']
+for n in range(len(categories)):
+	try:
+		items = categories[n]['items']
+		for i in range(len(items)):
+			urlProduct = "https://www.jagel.id/api/v3/partner/create_product.php"
+
+			price = items[i]['discountedPriceV2']['amountDisplay'].replace('.', '')
+			discountedPrice = round(int(price) - (int(price) * 20 / 100))
+
+			bodyProduct = {
+				"title": items[i]['name'], # perlu ubah
+				"content": items[i]['description'], # perlu ubah
+				"label": '', # perlu ubah
+				"price": discountedPrice, # perlu ubah
+				"quantity": '10',
+				"weight": '300', 
+				"province": '10', # perlu ubah
+				"city": '349', # perlu ubah
+				"district": district, # perlu ubah
+				"purchasable": '1',
+				"price_before_discount": '',
+				"text_quantity": '',
+				"use_variant": '0',
+				"hl": 'in',
+				"component_view_uid": '6215d6e509e7f', 
+				"parent_view_uid": parent, # respon dari create place
+				"appuid": '5f3e3c3c77909',
+				"token": token # perlu ubah
+			}
+			# print(items[i]['name'])
+
+			rProduct = requests.post(urlProduct, data=bodyProduct)
+			print(f"Input {items[i]['name']} Berhasil | Status : {rProduct.status_code}")
+			print("Error : ", json.loads(json.dumps(rProduct.json()))['error'])
+
+			# UPLOADE IMAGE
+			dumps = json.dumps(rProduct.json())
+			loads = json.loads(dumps)
+			view_uid = loads['list']['view_uid']
+			title = loads['list']['title']
+			image = open('image.txt', 'r').read() # string
+
+			urlProduct_Upload = 'https://www.jagel.id/api/v3/partner/upload_image.php'
+			bodyProduct_Upload = {
+				"image": image, #PerluDiubah
+				"hl": "in",
+				"view_uid": view_uid,
+				"appuid": "5f3e3c3c77909",
+				"position": "0",
+				"title": title,
+				"token": token,
+				"image_type": "jpg"
+			}
+
+			rProduct_Upload = requests.post(urlProduct_Upload, data=bodyProduct_Upload)
+
+			print('Upload Image Status : ', rProduct_Upload.status_code) # response status code
+			sleep(1)
+			response = json.loads(json.dumps(rProduct_Upload.json()))['error']
+			print('Error :', response) # response json
+			sleep(1)
+			print('\nDone')
+	except:
+		print(f'Item tidak ditemukan di kategori {n}')
+

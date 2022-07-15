@@ -5,8 +5,8 @@ import os
 url = "https://www.jagel.id/api/v3/rajaongkir/get_city.php"
 body = {
 	"hl": 'in',
-	"city" : f"{input('Masukan ID Provinsi : ')}",
-	"token": 'd996af9efa5aefaa2eac4a374e6f03b4'
+	"city" : '10',
+	"token": '29bf19da083fd9733d8785653d0aae1c'
 }
 
 r = requests.post(url, data = body)
