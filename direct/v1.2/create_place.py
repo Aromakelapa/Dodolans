@@ -1,11 +1,9 @@
 from time import sleep
-from PIL import Image
 import requests
-import base64
-import shutil
 import json
 import os
-
+import base64
+import shutil
 
 
 
@@ -19,50 +17,35 @@ cend = '\33[0m'
 
 
 # LOGIN DODOLANS
-print()
-print(f'{credy}Mengecek Token...{cend}')
-print()
-sleep(2)
 
-if os.path.exists('session/token.txt'):
-	print(f"{credg}Token ditemukan{credg}")
-	sleep(1)
-	print("Login dilewat")
-	sleep(1)
+print('Login')
+sleep(1)
+urlLogin = "https://www.jagel.id/api/v3/basic/login.php"
+bodyLogin = {
+	"username": "gilangpkl",
+	"password": "112233",
+	"hl": 'in',
+	"imei": '7154624f6161616150737859516746456847634c506c7376536e797064446800',
+	"appuid": '5f3e3c3c77909',
+	"firebase_token": 'e6Gwmju3S9WOQZq8MfvsCX:APA91bGgTAnMH9dx2UVhfYUqSKlc4Di_BhkcelLYqNb0Rv6WYsCLul8KJjKbESgQ4WimRiGAIamc2rgeU0AdAopv1LprwwuP3Dl8xhS3-asvYP8j5MyGZzSfGVLunzyuDcR22ZASinab',
+	"firebase_type": '1'
+}
+rLogin = requests.post(urlLogin, data = bodyLogin)
 
-else:
-	print (f"{credr}Token tidak ditemukan{cend}")
-	print()
-	sleep(1)
-	print('Login')
-	sleep(1)
+print(f'Login Status : {credg}{rLogin.status_code}{cend}')
 
-	urlLogin = "https://www.jagel.id/api/v3/basic/login.php"
-	bodyLogin = {
-		"username": input('Username : '),
-		"password": input('Password : '),
-		"hl": 'in',
-		"imei": '7154624f6161616150737859516746456847634c506c7376536e797064446800',
-		"appuid": '5f3e3c3c77909',
-		"firebase_token": 'e6Gwmju3S9WOQZq8MfvsCX:APA91bGgTAnMH9dx2UVhfYUqSKlc4Di_BhkcelLYqNb0Rv6WYsCLul8KJjKbESgQ4WimRiGAIamc2rgeU0AdAopv1LprwwuP3Dl8xhS3-asvYP8j5MyGZzSfGVLunzyuDcR22ZASinab',
-		"firebase_type": '1'
-	}
-	rLogin = requests.post(urlLogin, data = bodyLogin)
+dumps = json.dumps(rLogin.json(), indent=3)
+token = json.loads(dumps)['token']
+try:
+	os.mkdir('data')
+except:
+	pass
+with open('data/token.txt', 'w') as file:
+	file.write(token)
+	file.close
+print(f'{credg}Token tersimpan di data/token.txt{cend}')
 
-	print(f'Login Status : {credg}{rLogin.status_code}{cend}')
 
-	dumps = json.dumps(rLogin.json())
-	token = json.loads(dumps)['token']
-
-	try:
-		os.mkdir('session')
-	except:
-		pass
-
-	with open('session/token.txt', 'w') as file:
-		file.write(token)
-		file.close
-	print(f'{credg}Token tersimpan di session/token.txt{cend}')
 
 # GET DATA MERCHANT FROM GRABFOOD
 
@@ -81,14 +64,9 @@ headGrab = {
 
 rGrab = requests.get(urlGrab, headers = headGrab)
 
-print(f'└─ Grabing Data Status : {credg}{rGrab.status_code}{cend}')
+print(f'Status : {credg}{rGrab.status_code}{cend}')
 sleep(1)
 dumps = json.dumps(rGrab.json(), indent = 3)
-
-try:
-	os.mkdir('data')
-except:
-	pass
 with open('data/data.json', 'w') as file:
 	file.write(dumps)
 	file.close
@@ -99,11 +77,11 @@ sleep(1)
 
 # CREATE PLACE
 
-token = open('session/token.txt').read()
+token = open('data/token.txt').read()
 merchant = json.load(open('data/data.json'))
 
 # START LIST HOUR
-day = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
+day = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 
 listHour = []
 idx = 1
@@ -123,19 +101,13 @@ for i in day:
 # print(listHour)
 # END LIST HOUR
 
-########## WARNING
-print(f"Nama Merchant : {merchant['merchant']['name']}")
-print(f"Deskripsi : {merchant['merchant']['description']}")
-print(f"Kategori : {merchant['merchant']['cuisine']}")
-
-########## REQUESTS
 urlCreate = 'https://www.jagel.id/api/v3/partner/create_place.php'
 bodyCreate = {
 	"token": token, # PERHATIKAN TOKEN AKUN!
 	"component_view_uid": '6215d6e509e7f',
 	"title": merchant['merchant']['name'],
 	"content": merchant['merchant']['cuisine'],
-	"label": input('Label : '),
+	"label": "",
 	"origin_address": merchant['merchant']['address']['combined_address'],
 	"origin_lat": merchant['merchant']['latlng']['latitude'],
 	"origin_lng": merchant['merchant']['latlng']['longitude'],
@@ -173,15 +145,18 @@ parent = ""
 rCreate = requests.post(urlCreate, data=bodyCreate)
 
 print()
-print(f"{credy}Create Place{cend}")
-print(f"┌─[+]Input Merchant {merchant['merchant']['name']} Berhasil | Status : {credg}{rCreate.status_code}{cend}")
+print(f"(+) Input Merchant {merchant['merchant']['name']} Berhasil | Status : {credg}{rCreate.status_code}{cend}")
 sleep(1)
 loadsss = json.loads(json.dumps(rCreate.json()))
 response = loadsss['error']
 parent = loadsss['list']['view_uid']
-print(f'├──[Error] {response}')
+print(f'   Error : {response}')
+print()
 sleep(1)
-	
+
+
+
+
 
 # UPLOADE IMAGE
 dumps = json.dumps(rCreate.json())
@@ -204,25 +179,26 @@ bodyUpload = {
 
 rUpload = requests.post(urlUpload, data=bodyUpload)
 
-print('└─┬─[+] Upload Image Status : ', rUpload.status_code) # response status code
+print('Upload Image Status : ', rUpload.status_code) # response status code
 sleep(1)
 response = json.loads(json.dumps(rUpload.json()))['error']
-print('  └─[Error]', response) # response json
+print('Error :', response) # response json
 sleep(1)
-print()
- 
+print('\nDone')
+
+
+
 
 # CREATE PRODUCT
 
-print('┌─[ID Kecamatan]')
-print('├──[10] Pekalongan Barat')
-print('├──[11] Pekalongan Selatan')
-print('├──[12] Pekalongan Timur')
-print('└──[13] Pekalongan Utara')
+# print('\nID Kecamatan Tersedia :')
+print('Pekalongan Barat : 10')
+print('Pekalongan Selatan : 11')
+print('Pekalongan Timur : 12')
+print('Pekalongan Utara : 13')
 print()
 district = f"49{input('ID Kecamatan : ')}"
 print()
-sleep(1)
 categories = merchant['merchant']['menu']['categories']
 
 listLinkImg = []
@@ -234,8 +210,7 @@ for z in range(len(categories)):
 	except :
 		pass
 
-print(f"{credy}Encoding Image to base64{cend}")
-print()
+
 listBase64Img = []
 
 for w in listLinkImg:
@@ -243,12 +218,9 @@ for w in listLinkImg:
 		enc_img = image
 	else:
 		rGetImg = requests.get(w)
-		file = open("img.webp", "wb")
+		file = open("img.jpg", "wb")
 		file.write(rGetImg.content)
 		file.close()
-
-		im = Image.open("img.webp").convert("RGB")
-		im.save("img.jpg", "jpeg")
 
 		with open("img.jpg", "rb") as file:
 			b64_string = base64.b64encode(file.read())
@@ -258,13 +230,11 @@ for w in listLinkImg:
 		os.remove("img.jpg")
 
 	listBase64Img.append(enc_img)
-print()
+
 
 iterImgBase64 = iter(listBase64Img)
 
 
-print(f"{credy}Create Place{cend}")
-print()
 for n in range(len(categories)):
 	try:
 		items = categories[n]['items']
@@ -275,15 +245,12 @@ for n in range(len(categories)):
 			discountedPrice = round(int(price) - (int(price) * 20 / 100))
 
 			np = items[i]['name']
-			filt0 = np.replace("✕", "X")
-			filt1 = filt0.replace(".", " ")
+			filt1 = np.replace(".", " ")
 			filt2 = filt1.replace(",", " ")
 			filt3 = filt2.replace("+", " ")
-			filt4 = filt3.replace("/", " atau ")
+			filt4 = filt3.replace("/", " ")
 			filt5 = filt4.replace("(", " ")
-			filt6 = filt5.replace(")", " ")
-			filt7 = filt6.replace("   ", " ")
-			nameProduct = filt7.replace("  ", " ")
+			nameProduct = filt5.replace(")", " ")
 
 
 			if items[i]['description'] == "":
@@ -311,11 +278,11 @@ for n in range(len(categories)):
 				"appuid": '5f3e3c3c77909',
 				"token": token # perlu ubah
 			}
+			# print(items[i]['name'])
 
 			rProduct = requests.post(urlProduct, data=bodyProduct)
-
-			print(f"┌─[+] Input {items[i]['name']} Berhasil | Status : {rProduct.status_code}")
-			print("├──[Error] ", json.loads(json.dumps(rProduct.json()))['error'])
+			print(f"(+)Input {items[i]['name']} Berhasil | Status : {rProduct.status_code}")
+			print("    Error : ", json.loads(json.dumps(rProduct.json()))['error'])
 
 			# UPLOADE IMAGE
 			dumps = json.dumps(rProduct.json())
@@ -338,11 +305,12 @@ for n in range(len(categories)):
 
 				rProduct_Upload = requests.post(urlProduct_Upload, data=bodyProduct_Upload)
 
-				print('└─┬─[+] Upload Image Status : ', rProduct_Upload.status_code) # response status code
+				print('(*)Upload Image Status : ', rProduct_Upload.status_code) # response status code
 				sleep(1)
 				response = json.loads(json.dumps(rProduct_Upload.json()))['error']
-				print('  └─[Error]', response) # response json
+				print('    Error :', response) # response json
 				sleep(1)
+				print(f'{credg}Done{cend}')
 				print()
 			except :
 				pass
@@ -351,4 +319,3 @@ for n in range(len(categories)):
 
 print(f"Total Produk : {len(listLinkImg)}")
 shutil.rmtree("data")
-

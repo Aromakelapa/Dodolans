@@ -202,7 +202,7 @@ print('\nDone')
 
 # CREATE PRODUCT
 
-# print('\nID Kecamatan Tersedia :')
+print('\nID Kecamatan Tersedia :')
 print('Pekalongan Barat : 10')
 print('Pekalongan Selatan : 11')
 print('Pekalongan Timur : 12')
