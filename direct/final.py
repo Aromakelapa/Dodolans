@@ -174,6 +174,7 @@ rCreate = requests.post(urlCreate, data=bodyCreate)
 
 print()
 print(f"{credy}Create Place{cend}")
+print()
 print(f"┌─[+]Input Merchant {merchant['merchant']['name']} Berhasil | Status : {credg}{rCreate.status_code}{cend}")
 sleep(1)
 loadsss = json.loads(json.dumps(rCreate.json()))
@@ -204,7 +205,7 @@ bodyUpload = {
 
 rUpload = requests.post(urlUpload, data=bodyUpload)
 
-print('└─┬─[+] Upload Image Status : ', rUpload.status_code) # response status code
+print(f'└─┬─[+] Upload Image Status :  {credg}{Upload.status_code}{cend}') # response status code
 sleep(1)
 response = json.loads(json.dumps(rUpload.json()))['error']
 print('  └─[Error]', response) # response json
@@ -218,9 +219,8 @@ print('┌─[ID Kecamatan]')
 print('├──[10] Pekalongan Barat')
 print('├──[11] Pekalongan Selatan')
 print('├──[12] Pekalongan Timur')
-print('└──[13] Pekalongan Utara')
-print()
-district = f"49{input('ID Kecamatan : ')}"
+print('├──[13] Pekalongan Utara')
+district = f"49{input('└─── ID Kecamatan : ')}"
 print()
 sleep(1)
 categories = merchant['merchant']['menu']['categories']
@@ -243,19 +243,19 @@ for w in listLinkImg:
 		enc_img = image
 	else:
 		rGetImg = requests.get(w)
-		file = open("img.webp", "wb")
+		file = open("data/img.webp", "wb")
 		file.write(rGetImg.content)
 		file.close()
 
-		im = Image.open("img.webp").convert("RGB")
-		im.save("img.jpg", "jpeg")
+		im = Image.open("data/img.webp").convert("RGB")
+		im.save("data/img.jpg", "jpeg")
 
-		with open("img.jpg", "rb") as file:
+		with open("data/img.jpg", "rb") as file:
 			b64_string = base64.b64encode(file.read())
 
 		enc_img = str(b64_string.decode('utf-8'))
-		print(f"Encode Image {listLinkImg.index(w)} Berhasil : Status {rGetImg.status_code}")
-		os.remove("img.jpg")
+		print(f"Encode Image {listLinkImg.index(w)} | Status : {credg}{rGetImg.status_code}{cend}")
+		os.remove("data/img.jpg")
 
 	listBase64Img.append(enc_img)
 print()
@@ -263,7 +263,7 @@ print()
 iterImgBase64 = iter(listBase64Img)
 
 
-print(f"{credy}Create Place{cend}")
+print(f"{credy}Create Product{cend}")
 print()
 for n in range(len(categories)):
 	try:
@@ -314,7 +314,7 @@ for n in range(len(categories)):
 
 			rProduct = requests.post(urlProduct, data=bodyProduct)
 
-			print(f"┌─[+] Input {items[i]['name']} Berhasil | Status : {rProduct.status_code}")
+			print(f"┌─[+] Input {items[i]['name']} Berhasil | Status : {credg}{rProduct.status_code}{cend}")
 			print("├──[Error] ", json.loads(json.dumps(rProduct.json()))['error'])
 
 			# UPLOADE IMAGE
@@ -338,7 +338,7 @@ for n in range(len(categories)):
 
 				rProduct_Upload = requests.post(urlProduct_Upload, data=bodyProduct_Upload)
 
-				print('└─┬─[+] Upload Image Status : ', rProduct_Upload.status_code) # response status code
+				print(f'└─┬─[+] Upload Image Status :  {credg}{rProduct_Upload.status_code}{cend}') # response status code
 				sleep(1)
 				response = json.loads(json.dumps(rProduct_Upload.json()))['error']
 				print('  └─[Error]', response) # response json
